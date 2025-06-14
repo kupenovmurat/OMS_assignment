@@ -2,8 +2,8 @@ package main
 
 import (
 	"database/sql"
-	"io/ioutil"
 	"log"
+	"os"
 	"strings"
 
 	"building-management-system/config"
@@ -68,7 +68,7 @@ func setupRoutes(app *fiber.App, db *sql.DB) {
 func runMigrations(db *sql.DB) {
 	migrationFile := "migrations/001_create_tables.sql"
 
-	content, err := ioutil.ReadFile(migrationFile)
+	content, err := os.ReadFile(migrationFile)
 	if err != nil {
 		log.Printf("Migration file not found: %v", err)
 		return

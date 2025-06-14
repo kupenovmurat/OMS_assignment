@@ -35,7 +35,7 @@ func (h *BuildingHandler) GetBuildings(c *fiber.Ctx) error {
 
 	rows, err := h.db.Query("SELECT id, name, address FROM building ORDER BY id")
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": "Failed to fetch buildings"})
+		return c.Status(500).JSON(fiber.Map{"error": "Database query failed"})
 	}
 	defer rows.Close()
 
