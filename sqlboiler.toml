@@ -1,0 +1,15 @@
+[psql]
+dbname  = "building_management"
+host    = "localhost"
+port    = 5432
+user    = "postgres"
+pass    = "postgres"
+sslmode = "disable"
+schema  = "public"
+
+[auto]
+output   = "models"
+wipe     = true
+no-tests = true
+no-hooks = true
+no-auto-timestamps = false 
