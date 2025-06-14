@@ -12,7 +12,7 @@ A REST API to manage buildings and apartments built with Go, Fiber framework, an
 
 ## Technology Stack
 
-- **Language**: Go 1.21+
+- **Language**: Go 1.24+
 - **Framework**: Fiber v2
 - **Database**: PostgreSQL (configurable)
 - **ORM**: Raw SQL queries (SQLBoiler ready)
@@ -52,7 +52,7 @@ A REST API to manage buildings and apartments built with Go, Fiber framework, an
 ## Setup Instructions
 
 ### 1. Prerequisites
-- Go 1.21 or higher
+- Go 1.24 or higher
 - PostgreSQL running locally or remotely
 
 ### 2. Clone and Setup
